@@ -1,19 +1,16 @@
 <app-navbar></app-navbar>
 <div class="container">
+  <!-- Sidebar -->
   <app-sidebar></app-sidebar>
+  
   <app-page-content>
-    <app-breadcrump></app-breadcrump>
+    <div class="container-wrap">   <!-- el container wrap ocupe todo el page-content solo un margen para que sea la difenrecia -->
+      <!-- Contenido de la página (resto del espacio disponible) -->
+    <app-content></app-content>  
+    <!-- Breadcrumb (5vh de altura) -->
+    <app-breadcrump></app-breadcrump> 
+    <!-- Footer (5vh de altura) -->
     <app-footer></app-footer>
+    </div>
   </app-page-content>
 </div>
-
-<!-- 
-<h1 class="text-3xl font-bold text-center mt-10" >
-  Angular 19.0.0 <span class="text-blue-400">Tailwind CSS </span> 
-</h1>
-
-<div class="text-center mt-10">
-  <button mat-raised-button color="primary">
-    Empezar
-  </button>
-</div> -->

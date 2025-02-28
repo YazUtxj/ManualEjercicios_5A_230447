@@ -6,10 +6,10 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { PageContentComponent } from "./components/page-content/page-content.component";
 import { BreadcrumpComponent } from "./components/breadcrump/breadcrump.component";
 import { FooterComponent } from "./components/footer/footer.component";
-
+import {ContentComponent} from "./components/content/content.component"
 @Component({
   selector: 'app-root',
-  imports: [MatButtonModule, NavbarComponent, SidebarComponent, PageContentComponent, BreadcrumpComponent, FooterComponent],
+  imports: [MatButtonModule, NavbarComponent, SidebarComponent, PageContentComponent, BreadcrumpComponent, FooterComponent,ContentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

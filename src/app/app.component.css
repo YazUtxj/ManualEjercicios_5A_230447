@@ -1,20 +1,62 @@
-.container {
-    display: flex;
-    flex:1;
-    height: 95%;
-}
-.container app-sidebar {
-    flex: 0 0 40%;
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
     height: 100%;
-}
-.container app-page-content{
-    flex: 0 0 85%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 95vh; /* El contenedor ocupa el 95% de la altura de la ventana */
+    width: 100%;
+  }
+  
+  app-sidebar {
+    width: 20%; /* El sidebar ocupa el 20% del ancho */
+    height: 100%;
+    background-color: #f4f4f4; /* Color de fondo del sidebar */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  app-page-content {
+    width: 80%; /* El page-content ocupa el 80% del ancho */
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Los elementos dentro del page-content se organizan en columna */
+    background-color: #fff; /* Color de fondo del contenido principal */
+    box-sizing: border-box;
+    padding: 20px; /* Espacio alrededor del contenido */
+    overflow: hidden; /* Evita que los elementos sobresalgan del contenedor */
+  }
+  
+  .container-wrap {
     display: flex;
     flex-direction: column;
-}
-app-footer{
-   
-}
-app-breadcrump{
+    height: 100%; /* El container-wrap ocupa toda la altura del page-content */
+    margin: 10px; /* Margen para crear diferencia visual */
+  }
+  
+  app-content {
+    flex: 1; /* Este componente ocupa el espacio restante entre el breadcrumb y el footer */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto; /* Permite desplazamiento si el contenido es muy largo */
+  }
+  
+  app-breadcrump {
+    height: 5vh; /* El breadcrumb ocupa 5vh */
+    background-color: #e0e0e0; /* Color de fondo del breadcrumb */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  app-footer {
+    height: 5vh; /* El footer ocupa 5vh */
+    background-color: #e0e0e0; /* Color de fondo del footer */
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
-}
+  
