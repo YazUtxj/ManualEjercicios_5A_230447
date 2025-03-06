@@ -1,1 +1,44 @@
-<p>Espacio para sidebar</p>
+<div class="w-full p-4 space-y-4 bg-white relative">
+  <!-- Ícono de Cerrar -->
+  <button class="absolute top-4 right-4 bg-black text-white text-xl p-2 rounded-full" onclick="/* Agrega la acción de cerrar aquí */">
+    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+    </svg>
+  </button>
+
+  <h1 class="text-2xl font-bold text-black text-center">Sidebar</h1>
+  <h2 class="text-xl text-black text-center">Aplicaciones web para Industria 4.0</h2>
+
+  <!-- Botón Descripción -->
+  <button type="button" class="w-full p-2 text-base text-gray-900 bg-amber-50 rounded-md flex justify-between items-center transition hover:bg-amber-100" aria-controls="dropdown-descripcion" onclick="document.getElementById('dropdown-descripcion').classList.toggle('hidden')">
+    <span class="pl-5">Objetivo</span>
+    <svg class="w-3 h-3 transform transition-transform" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+  </button>
+  <ul id="dropdown-descripcion" class="py-2 space-y-2 hidden pl-11">
+    <li><a href="#" class="text-sm text-gray-900">El alumno desarrollará aplicaciones web empresariales, mediante el uso de Framework MVC para brindar seguimiento a los procesos de la industria 4.0.</a></li>
+  </ul>
+
+  <!-- Botón Unidad 2 -->
+  <button type="button" class="w-full p-2 text-base text-gray-900 bg-amber-50 rounded-md flex justify-between items-center transition hover:bg-amber-100" aria-controls="dropdown-objetivo" onclick="document.getElementById('dropdown-objetivo').classList.toggle('hidden')">
+    <span class="pl-5">Unidad 2</span>
+    <svg class="w-3 h-3 transform transition-transform" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+  </button>
+  <ul id="dropdown-objetivo" class="py-2 space-y-2 hidden pl-11">
+    <li><a href="#" class="text-sm text-gray-900">Framework para web Empresarial</a></li>
+  </ul>
+
+  <!-- Botón Descripción Unidad -->
+  <button type="button" class="w-full p-2 text-base text-gray-900 bg-amber-50 rounded-md flex justify-between items-center transition hover:bg-amber-100" aria-controls="dropdown-extra" onclick="document.getElementById('dropdown-extra').classList.toggle('hidden')">
+    <span class="pl-5">Objetivo de la  Unidad</span>
+    <svg class="w-3 h-3 transform transition-transform" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+  </button>
+  <ul id="dropdown-extra" class="py-2 space-y-2 hidden pl-11">
+    <li><a href="#" class="text-sm text-gray-900">Información adicional</a></li>
+  </ul>
+</div>

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'ManualEjercicio2_5A_230237' title`, () => {
+  it(`should have the 'ManualEjercicios_5A_230147' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ManualEjercicio2_5A_230237');
+    expect(app.title).toEqual('ManualEjercicios_5A_230147');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ManualEjercicio2_5A_230237');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ManualEjercicios_5A_230147');
   });
 });

@@ -1,32 +1,31 @@
-<nav class="bg-red-600 p-4 flex justify-between items-center shadow-lg">
+<nav class="bg-red-600 p-1 flex justify-between items-center shadow-lg">
     <div class="flex items-center space-x-3">
         <img src="https://angular.io/assets/images/logos/angular/angular.svg" class="h-8" alt="Angular Logo" />
-        <span class="text-2xl font-semibold text-white">Practica de Ejercios de Angular</span>
+        <span class="text-2xl font-semibold text-white">Angular</span>
     </div>
-
-    <!--  navegación -->
-    <ul class="flex space-x-3 text-white font-medium">
-        <li><a href="#" class="hover:text-teal-400 px-6 transition-all">Ejercicios</a></li>
-        <li><a href="#" class="hover:text-teal-400 px-6 transition-all">Tareas</a></li>
-        <li><a href="#" class="hover:text-teal-400 px-6 transition-all">Examen</a></li>
-        <li><a href="#" class="hover:text-teal-400 px-6 transition-all">Acerca de</a></li>
+       <!-- Menú de navegación -->
+       <ul class="flex space-x-6 text-white font-medium flex-grow justify-center">
+        <li><a href="#" class="hover:text-red-200 px-6 transition-all">Ejercicios</a></li>
+        <li><a href="#" class="hover:text-red-200 px-6 transition-all">Tareas</a></li>
+        <li><a href="#" class="hover:text-red-200 px-6 transition-all">Examen</a></li>
+        <li><a href="#" class="hover:text-red-200 px-6 transition-all">Acerca de</a></li>
         
-        <!-- menuContacto -->
+        <!-- Menú Desplegable de Contacto -->
         <li class="relative group">
-            <a href="#" class="text-white hover:text-teal-400 px-6 transition-all">Contacto</a>
+            <a href="#" class="text-white hover:text-red-200 px-6 transition-all">Contacto</a>
             <div class="absolute left-0 mt-2 w-48 bg-red-700 divide-y divide-black rounded-lg shadow-lg opacity-0 pointer-events-none group-focus-within:opacity-100 group-focus-within:pointer-events-auto">
                 <ul class="py-2">
-                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-teal-400">Teléfono</a></li>
-                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-teal-400">Email</a></li>
-                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-teal-400">Dirección</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Teléfono</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Email</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Dirección</a></li>
                 </ul>
             </div>
         </li>
     </ul>
-
+  
     <div class="flex items-center space-x-4">
-
-        <!-- busqueda -->
+  
+        <!-- Formulario de búsqueda -->
         <form class="flex items-center">
             <div class="relative">
                 <input type="search" id="default-search" class="block w-64 p-2 text-sm text-black border border-red-600 rounded-lg bg-white focus:ring-red-500 focus:border-red-500" placeholder="Buscar..." required />
@@ -35,11 +34,11 @@
                 </button>
             </div>
         </form>
-
-        <!-- usuario-->
+  
+        <!-- Ícono de Usuario -->
         <div class="relative group">
-            <button class="text-white bg-red-800 hover:bg-red-900 font-medium rounded-full ">
-                <img src="assets/images/user.png" alt="Foto de Usuario" class="rounded-full w-10 h-10" />
+            <button class="text-white bg-red-800 hover:bg-red-900 font-medium">
+                <img src="assets/images/user.png" alt="Foto de Usuario" class="w-10 h-10" />
             </button>
             <div class="absolute right-0 mt-2 w-48 bg-red-700 divide-y divide-black rounded-lg shadow-lg opacity-0 pointer-events-none group-focus-within:opacity-100 group-focus-within:pointer-events-auto">
                 <div class="px-4 py-3">
@@ -49,9 +48,11 @@
                 <ul class="py-2">
                     <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Mis Dashboards</a></li>
                     <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Configuraciones</a></li>
-                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Cerrar sesión</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-red-800">Iniciar Sesion</a></li>
+                    <li><a href="#"  class="block px-4 py-2 text-sm text-white hover:bg-red-800">Cerrar Sesión</a></li>
+
                 </ul>
             </div>
         </div>
     </div>
-</nav>
+  </nav>
